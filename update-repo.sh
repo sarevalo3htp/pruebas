@@ -6,6 +6,9 @@ repo_local="/c/Users/sergi/Desktop/LEGOPS"
 # Ruta al archivo página.html
 archivo_html="pagina.html"
 
+# Log para depuración
+echo "Recibida solicitud webhook en $(date)" >> webhook.log
+
 # Actualizar el repositorio local
 cd $repo_local
 git pull origin main
